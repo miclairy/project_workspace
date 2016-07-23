@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Blender Workspace</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css" media="screen"> -->
+  <script type="text/javascript">
+      function loadComment(){
+          var text_comment = document.getElementById("comment").value;
+          comments.innerHTML = text_comment;
+      }
+  </script>
 </head>
 <body>
     <h1> Cat </h1>
@@ -12,4 +18,8 @@
       <a href="project.html"><img src="cat.jpg" alt="image of a cute cat" > </img> </a>
         <p> This cat is really cute <p>
     </div>
+    <h2>Comments</h2>
+    <p id=comments></p>
+    <p><label><span>Comment:</span><input type="text" id="comment" name="comment" maxlength="500"></label></p>
+    <p><input type="submit" value="Submit" onclick="loadComment();"></p>
 </html>
