@@ -1,6 +1,5 @@
 .floated_img
 {
     float: left;
-    padding: 20;
-
+    padding-right: 100px;
 }
