@@ -13,6 +13,15 @@
   </script>
 </head>
 <body>
+      <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <h1> Cat </h1>
 
     <div class="floated_img">
@@ -21,6 +30,7 @@
 
     </div>
     <h2>Comments</h2>
+    <div class="fb-comments" data-href="http://project-workspace.azurewebsites.net/project.html" data-width="600" data-numposts="5"></div>
     <div id=comments></div>
     <p><label><span>Comment:</span><input type="text" id="comment" name="comment" maxlength="500"></label></p>
     <p><input type="submit" value="Submit" onclick="loadComment();"></p>
