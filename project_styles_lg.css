@@ -1,9 +1,17 @@
+
+
+.floated_img
+{
+    float: left;
+    padding-left: 100px;
+}
+
+
 .embed-container {
   position: relative;
   height: 0;
   overflow: hidden;
   width: 560px;
   height: 360px;
-  border-style: solid;
-  border-color: green;
+
 }

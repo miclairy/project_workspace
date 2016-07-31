@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="project_styles.css" media="screen and (max-device-width: 800px)">
   <link rel="stylesheet" type="text/css" href="project_styles_lg.css" media="screen and (min-device-width: 800px)">
+  <link rel="stylesheet" type="text/css" href="styles_navbar.css" media="screen">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -24,7 +25,16 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <h1> Cat </h1>
+
+    <nav class="navbar navbar-inverse" id=navbar>
+      <div class="container-fluid" id=top-bar>
+        <ul >
+          <li><a href="index.html">Catscape</a><li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="project.html">Cat</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <div class= "container-fluid">
       <a href="project.html"><img src="cat.jpg" alt="image of a cute cat" > </img> </a>

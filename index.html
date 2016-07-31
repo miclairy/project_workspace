@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <title>Catscape</title>
   <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="styles_navbar.css" media="screen">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav>
+    <nav class="navbar navbar-inverse" id=navbar>
       <div class="container-fluid" id=top-bar>
         <ul >
-          <li><a href="index.html"><h1>Catscape</h1></a><li>
+          <li class="active"><a href="index.html">Catscape</a><li>
           <li><a href="about.html">About</a></li>
           <li><a href="project.html">Cat</a></li>
         </ul>
@@ -30,17 +31,17 @@
       <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
-              <a href="project.html"><img src="cat.jpg" alt="image of a cute cat" height=300 width=300> </img> </a>
+              <a href="project.html"><img src="cat.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300> </img> </a>
               <p>This cat is really cute</p>
               <p><a href="project.html">more>>></a></p>
             </div>
             <div class="col-sm-4">
-          <a href="project.html"><img src="adorablekitten.jpg" alt="image of a cute cat" height=80% width=80%> </img> </a>
+          <a href="project.html"><img src="adorablekitten.jpg" alt="image of a cute cat" class="img-thumbnail" height=80% width=80%> </img> </a>
             <p> Adorable kitten </p>
             <a href="project.html" class="btn btn-info btn-xs" role="button">More</a>
             </div>
             <div class="col-sm-4">
-              <a href="project.html"><img src="tomas.jpg" alt="image of a cute cat" height=300 width=300> </img> </a>
+              <a href="project.html"><img src="tomas.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300> </img> </a>
               <p> This cat is really cute </p>
               <p><a href="project.html">more>>></a></p>
             </div>
