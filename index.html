@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Catscape</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="styles_navbar.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="CSS/styles_navbar.css" media="screen">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
 </head>
 <body>
     <nav class="navbar navbar-inverse" id=navbar>
@@ -20,29 +22,47 @@
         </ul>
       </div>
     </nav>
-      <div class="jumbotron">
-        <div class="container text-center" id="jumbo">
+    <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-          <img src="row_kittens.jpg" height=90% width=90%> </img>
-          <h2> Kittens are adorable </2>
-
-          </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/cat.jpg" alt="cat">
       </div>
+
+      <div class="item">
+        <img src="images/Tomas.jpg" alt="tom">
+      </div>
+      <div class="container text-center item" id="jumbo">
+          <img src="images/row_kittens.jpg" height=90% width=90%> </img>
+          <h2> Kittens are adorable </2>
+        </div>
+    </div>
+  </div>
+  </div>
       <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
-              <a href="project.html"><img src="cat.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300> </img> </a>
-              <p>This cat is really cute</p>
+              <a href="project.html"><img src="images/cat.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300 id="imageHid"> </img> </a>
+              <p id="hidden">This cat is really cute</p>
               <p><a href="project.html">more>>></a></p>
             </div>
             <div class="col-sm-4">
-          <a href="project.html"><img src="adorablekitten.jpg" alt="image of a cute cat" class="img-thumbnail" height=80% width=80%> </img> </a>
-            <p> Adorable kitten </p>
+          <a href="project.html"><img src="images/adorablekitten.jpg" alt="image of a cute cat" class="img-thumbnail" height=80% width=80% id="imageHid"> </img> </a>
+            <p id="hidden"> Adorable kitten </p>
             <a href="project.html" class="btn btn-info btn-xs" role="button">More</a>
             </div>
             <div class="col-sm-4">
-              <a href="project.html"><img src="tomas.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300> </img> </a>
-              <p> This cat is really cute </p>
+              <a href="project.html"><img src="images/Tomas.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300> </img> </a>
+              <p> Thomas </p>
               <p><a href="project.html">more>>></a></p>
             </div>
         </div>

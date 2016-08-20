@@ -8,6 +8,9 @@
    position: relative;
    text-align: center;
 }
+#myCarousel{
+    background-color: palevioletred;
+}
 
 #jumbo h2 {
    position: absolute;
