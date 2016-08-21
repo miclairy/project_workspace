@@ -10,17 +10,15 @@ function toggleStars(): void{
 
 $(document).ready(function() {
     $("#myCarousel").carousel({interval: 50000});
-    $("#hidden").hide();
+ 
 
-
-    $("#imageHid").on("mouseenter", function(){
-        $("#hidden").fadeIn();
-        console.log("entered mouse on image");
-    });
-
-    $("#imageHid").on("mouseleave", function(){
-        $("#hidden").fadeOut();
-        console.log("exit mouse on image");
-    });
+    	$('.hov').hover(
+		function(){
+			$(this).find('.caption').show();
+		},
+		function(){
+			$(this).find('.caption').hide();
+		}
+	);
 
 });
