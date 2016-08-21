@@ -11,6 +11,24 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 
+  <!-- 
+To collect end-user usage analytics about your application, 
+insert the following script into each page you want to track.
+Place this code immediately before the closing </head> tag,
+and before any other scripts. Your first data will appear 
+automatically in just a few seconds.
+-->
+<script type="text/javascript">
+  var appInsights=window.appInsights||function(config){
+    function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(s);try{t.cookie=u.cookie}catch(h){}for(t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Dependency"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+    }({
+        instrumentationKey:"dcf9393a-dbb7-4076-82ce-c5376843a2d9"
+    });
+       
+    window.appInsights=appInsights;
+    appInsights.trackPageView();
+</script>
+
 </head>
 <body>
     <nav class="navbar navbar-inverse" id=navbar>
@@ -52,18 +70,21 @@
         <div class="row">
             <div class="col-sm-4">
               <a href="project.html"><img src="images/cat.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300 id="imageHid"> </img> </a>
-              <p id="hidden">This cat is really cute</p>
-              <p><a href="project.html">more>>></a></p>
+              <div class="pull-right">
+                <p>20/08/2016</p>
+              </div>
+              <p><a href="project.html" class="btn btn-info btn-xs" role="button">More</a></p>
+              <p id="hidden">This cat is really cute </p>
             </div>
             <div class="col-sm-4">
           <a href="project.html"><img src="images/adorablekitten.jpg" alt="image of a cute cat" class="img-thumbnail" height=80% width=80% id="imageHid"> </img> </a>
+            <p><a href="project.html" class="btn btn-info btn-xs" role="button">More</a></p>
             <p id="hidden"> Adorable kitten </p>
-            <a href="project.html" class="btn btn-info btn-xs" role="button">More</a>
             </div>
             <div class="col-sm-4">
               <a href="project.html"><img src="images/Tomas.jpg" alt="image of a cute cat" class="img-thumbnail" height=300 width=300> </img> </a>
+              <p><a href="project.html" class="btn btn-info btn-xs" role="button">More</a></p>              
               <p> Thomas </p>
-              <p><a href="project.html">more>>></a></p>
             </div>
         </div>
     </div>
