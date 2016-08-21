@@ -4,6 +4,10 @@
     /*padding-left: 100px;*/
 }
 
+.row{
+    padding-top: 10px;
+}
+
 #jumbo {
    position: relative;
    text-align: center;
