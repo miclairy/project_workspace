@@ -8,13 +8,14 @@
   <link rel="stylesheet" type="text/css" href="CSS/styles_navbar.css" media="screen">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
+<script src="./node_modules/mustache/mustache.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  <title>Catscape</title>
+  <title>Project</title>
   <!-- <link rel="stylesheet" type="text/css" href="styles.css" media="screen"> -->
-  <script src="js/comment.js"></script>
+
   <script src="js/main.js"></script>
+  <script src="js/projectTemplate.js"></script>
 </head>
 <body>
       <div id="fb-root"></div>
@@ -30,30 +31,22 @@
     <nav class="navbar navbar-inverse" id=navbar>
       <div class="container-fluid" id=top-bar>
         <ul >
-          <li><a href="index.html">Catscape</a><li>
+          <li><a href="index.html">Project Workspace</a><li>
           <li><a href="about.html">About</a></li>
-          <li class="active"><a href="project.html">Cat</a></li>
+          <li class="active"><a href="project.html">Project</a></li>
         </ul>
       </div>
     </nav>
-
-    <div class= "container-fluid">
-      <div id=stars>
-        <span onclick="toggleStars()" class="glyphicon glyphicon-star-empty star"></span>
-        <span class="glyphicon glyphicon-star-empty star"></span>
-        <span class="glyphicon glyphicon-star-empty" id="star3"></span>
-        <span class="glyphicon glyphicon-star-empty" id="star4"></span>
-        <span class="glyphicon glyphicon-star-empty" id="star5"></span>
-      </div>
-      <a href="project.html"><img src="images/cat.jpg" alt="image of a cute cat" > </img> </a>
-        <p> This cat is really cute <p>
-      <div class= 'embed-container'>
-          <iframe width=100% height=100% src="https://www.youtube.com/embed/5r5dSlmKNoA" frameborder="0" allowfullscreen></iframe>
-      </div>
+<script id="template" type="text/template">
+      <img src={{imageSrc}}> </img>
+        <p> {{description}} <p>
+      <!--<div class= 'embed-container'>
+          <iframe width=100% height=100% src={{youtube}} frameborder="0" allowfullscreen></iframe>
+      </div>-->
     </div>
-    <h2>Comments</h2>
-    <div class="fb-comments" data-href="http://project-workspace.azurewebsites.net/project.html" data-width="600" data-numposts="5"></div>
-    <div id=comments></div>
-    <p><label><span>Comment:</span><input type="text" id="comment" name="comment" maxlength="500"></label></p>
-    <p><input type="submit" value="Submit" onclick="loadComment();"></p>
+  </script>
+    <!--<h2>Comments</h2>
+    <div class="fb-comments" data-href="http://project-workspace.azurewebsites.net/project.html" data-width="600" data-numposts="5"></div>-->
+
+
 </html>
