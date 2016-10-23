@@ -10,7 +10,7 @@ $(document).ready(function () {
         src : "images/Duck.png",
         alt : "Rubber ducks in a bath tub",
         title : "Duck!",
-        youtube : "#",
+        youtube : "https://www.youtube.com/embed/FSd88y_VgDc",
         description : "The reddit monthly contest for July was Duck! themed. Thus of course I made ducks falling from the sky",
     };
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
         src : "images/owl.png",
         alt : "Animated owl sitting in an hole in a tree",
         title : "Early Bird",
-        youtube : "#",
+        youtube : "https://www.youtube.com/embed/vSq7VAKLsnk",
         description : "I made an animation of an owl falling his hole.",
     };
 
@@ -29,7 +29,7 @@ $(document).ready(function () {
         youtube : "#",
         description : "I tried to make a photo realistic photo of a cup and donut",
     };
-    
+
     var cokeProj = {
         src : "images/cocacolaBottle.png",
         alt : "Coke bottle falling from the sky",
@@ -37,15 +37,15 @@ $(document).ready(function () {
         youtube : "#",
         description : "Reddit's theme contest for June was to texture a bottle and I made a coke bottle falling out of the sky",
     };
-    
+
     var pigletProj = {
         src : "images/piglet.png",
         alt : "A still from the animation piglet and the red balloon",
         title : "Piglet and the Red Balloon",
-        youtube : "#",
+        youtube : "https://www.youtube.com/embed/qg3AkJTsvlw",
         description : "My first animation without a tutorial. Piglet loses his balloon then has to climb a tree to get it.",
     };
-    
+
     var lowPolyProj = {
         src : "images/low poly owl and tree.png",
         alt : "Low poly owl and tree on floating island",
@@ -53,15 +53,15 @@ $(document).ready(function () {
         youtube : "#",
         description : "A low poly tree and owl",
     };
-    
+
     var mechHeartProj = {
         src : "images/mechanicalHeart.png",
         alt : "Mechanical Heart",
         title : "Mechanical Heart",
-        youtube : "#",
+        youtube : "https://www.youtube.com/embed/oGQItBSEZuk",
         description : "A science fiction version of what a mechanical heart could look like.",
     };
-    
+
     var motorbikeProj = {
         src : "images/motorbike.png",
         alt : "motorbike",
@@ -77,7 +77,7 @@ $(document).ready(function () {
         youtube : "#",
         description : "A cyberpunk gun that I made",
     };
-    
+
     var bearProj = {
         src : "images/old bear.png",
         alt : "old bear",
@@ -90,7 +90,7 @@ $(document).ready(function () {
         src : "images/perio.png",
         alt : "perio",
         title : "Perio",
-        youtube : "#",
+        youtube : "https://www.youtube.com/embed/z7O0WYZMEjo",
         description : "An animation of a bird waking up in the morning based on the tutorial",
     };
 
@@ -111,16 +111,16 @@ $(document).ready(function () {
     //     youtube: "#",
     //     description: "to do laters"
     // }
-    
+
     console.log("moved to " + localStorage.project);
 
 
     var template = $("#template").html();
     console.log(template);
-    
+
 
     for (i = 0; i < projects.length; i++){
-        
+
         if (projects[i].title == localStorage.project){
             console.log(projects[i]);
             var html = Mustache.render(template, projects[i]);
@@ -131,4 +131,3 @@ $(document).ready(function () {
 
 
 });
-
