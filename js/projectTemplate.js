@@ -10,7 +10,10 @@ $(document).ready(function () {
         src : "images/Duck.png",
         alt : "Rubber ducks in a bath tub",
         title : "Duck!",
-        youtube : "https://www.youtube.com/embed/FSd88y_VgDc",
+        youtube : function () {
+            $("iframe").remove();
+            $('.embed-container').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/FSd88y_VgDc" frameborder="0" allowfullscreen></iframe>');
+            },
         description : "The reddit monthly contest for July was Duck! themed. Thus of course I made ducks falling from the sky",
     };
 
@@ -18,7 +21,10 @@ $(document).ready(function () {
         src : "images/owl.png",
         alt : "Animated owl sitting in an hole in a tree",
         title : "Early Bird",
-        youtube : "https://www.youtube.com/embed/vSq7VAKLsnk",
+        youtube : function () {
+            $("iframe").remove();
+            $('.embed-container').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/vSq7VAKLsnk" frameborder="0" allowfullscreen></iframe>');
+            },
         description : "I made an animation of an owl falling his hole.",
     };
 
@@ -26,7 +32,7 @@ $(document).ready(function () {
         src : "images/donutCup.png",
         alt : "Donut and tea cup",
         title : "Donut and Tea",
-        youtube : "#",
+        youtube : "",
         description : "I tried to make a photo realistic photo of a cup and donut",
     };
 
@@ -34,7 +40,7 @@ $(document).ready(function () {
         src : "images/cocacolaBottle.png",
         alt : "Coke bottle falling from the sky",
         title : "Cocacola bottle",
-        youtube : "#",
+        youtube : "",
         description : "Reddit's theme contest for June was to texture a bottle and I made a coke bottle falling out of the sky",
     };
 
@@ -42,7 +48,10 @@ $(document).ready(function () {
         src : "images/piglet.png",
         alt : "A still from the animation piglet and the red balloon",
         title : "Piglet and the Red Balloon",
-        youtube : "https://www.youtube.com/embed/qg3AkJTsvlw",
+        youtube : function () {
+            $("iframe").remove();
+            $('.embed-container').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/qg3AkJTsvlw" frameborder="0" allowfullscreen></iframe>');
+            },
         description : "My first animation without a tutorial. Piglet loses his balloon then has to climb a tree to get it.",
     };
 
@@ -50,7 +59,7 @@ $(document).ready(function () {
         src : "images/low poly owl and tree.png",
         alt : "Low poly owl and tree on floating island",
         title : "Low poly floating island",
-        youtube : "#",
+        youtube : "",
         description : "A low poly tree and owl",
     };
 
@@ -58,7 +67,10 @@ $(document).ready(function () {
         src : "images/mechanicalHeart.png",
         alt : "Mechanical Heart",
         title : "Mechanical Heart",
-        youtube : "https://www.youtube.com/embed/oGQItBSEZuk",
+        youtube :function () {
+             $("iframe").remove();
+             $('.embed-container').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/oGQItBSEZuk" frameborder="0" allowfullscreen></iframe>');
+           },
         description : "A science fiction version of what a mechanical heart could look like.",
     };
 
@@ -66,7 +78,7 @@ $(document).ready(function () {
         src : "images/motorbike.png",
         alt : "motorbike",
         title : "Motorbike",
-        youtube : "#",
+        youtube : "",
         description : "Harely Davidson Motorbike",
     };
 
@@ -74,7 +86,7 @@ $(document).ready(function () {
         src : "images/gun.png",
         alt : "gun",
         title : "Cyber punk Gun",
-        youtube : "#",
+        youtube : "",
         description : "A cyberpunk gun that I made",
     };
 
@@ -82,7 +94,7 @@ $(document).ready(function () {
         src : "images/old bear.png",
         alt : "old bear",
         title : "Old Bear",
-        youtube : "#",
+        youtube : "",
         description : "An old teddy bear inspired from the childrens book old bear",
     };
 
@@ -90,7 +102,10 @@ $(document).ready(function () {
         src : "images/perio.png",
         alt : "perio",
         title : "Perio",
-        youtube : "https://www.youtube.com/embed/z7O0WYZMEjo",
+        youtube : function () {
+            $("iframe").remove();
+            $('.embed-container').append('<iframe width="560" height="315" class="youtube" src="https://www.youtube.com/embed/z7O0WYZMEjo" frameborder="0" allowfullscreen></iframe>');
+        },
         description : "An animation of a bird waking up in the morning based on the tutorial",
     };
 
@@ -117,7 +132,7 @@ $(document).ready(function () {
 
     var template = $("#template").html();
     console.log(template);
-
+    //$("iframe").remove();
 
     for (i = 0; i < projects.length; i++){
 
@@ -127,7 +142,7 @@ $(document).ready(function () {
         }
     }
 
-    $("body").append(html);
+    $("#wrapper").append(html);
 
 
 });
