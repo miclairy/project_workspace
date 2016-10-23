@@ -119,20 +119,11 @@ $(document).ready(function () {
     });
 
 
-
-    // var data = {
-    //     imageSrc: localStorage.src,
-    //     altImage:  localStorage.alt,
-    //     youtube: "#",
-    //     description: "to do laters"
-    // }
-
     console.log("moved to " + localStorage.project);
 
 
     var template = $("#template").html();
     console.log(template);
-    //$("iframe").remove();
 
     for (i = 0; i < projects.length; i++){
 
