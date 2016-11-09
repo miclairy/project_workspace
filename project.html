@@ -38,15 +38,23 @@
       </div>
     </nav>
 
+<div id=wrapper>
+</div>
 <script id="template" type="text/template">
     <div class="container-fluid">
       <div class="row">
          <div class="col-sm-9">
             <img src={{src}}> </img>
-            <p class="description"> {{description}} <p>
+            <h3 class="description">{{title}}</h3>
+            <p class="description"> {{description}} </p>
+              {{youtube}} 
         </div>
         <div class="col-sm-3">
             <h2>{{title}}</h2>
+            <p >Completed on: {{date}}</p>
+            <p >Time taken: {{time}}</p>
+            <p >Difficulty: {{difficulty}}</p>
+            <p >Aim: {{aim}}</p>
         </div>
       </div>
         
@@ -54,9 +62,14 @@
           <iframe width=100% height=100% src={{youtube}} frameborder="0" allowfullscreen></iframe>
       </div>-->
     </div>
+
   </script>
     <!--<h2>Comments</h2>
     <div class="fb-comments" data-href="http://project-workspace.azurewebsites.net/project.html" data-width="600" data-numposts="5"></div>-->
 
+<div class="col-sm-9">    
+<div class= 'embed-container'>
+</div>
+</div>
 
 </html>
