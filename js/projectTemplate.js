@@ -6,6 +6,32 @@ $(document).ready(function () {
     var alt = "";
     var title = "";
 
+    var cubeProj = {
+        src : "images/cubeLove.png",
+        alt : "2 cubes exchanging a present",
+        title : "Cube Love",
+        youtube : function () {
+            $("iframe").remove();
+            $('.embed-container').append('<iframe width="1060" height="615" src="https://www.youtube.com/embed/LSCBp65NNuM" frameborder="0" allowfullscreen></iframe>');
+            },
+        description : "The inspiration for this came from a reddit monthly constest to do things with e default cube. I decided to improve my animation skills by doing this short animation.",
+        date : "12th of Feburary 2017",
+        time : "1 month",
+        difficulty : "Medium",
+        aim : "Improve animation skills"
+    };
+
+    var kitchenProj = {
+        src : "images/kitchen.png",
+        alt : "Retro kitchen",
+        title : "Retro Kitchen",
+        description : "I had never made an architecture before and I didn't want to do a sterile scene. This kitchen is warm and homely with a retro theme which made it fun to make. I was really trying for realism here but it is not perfect because I ran out of time",
+        date : "26th Febuary 2017",
+        time : "2.5 Months with a break in the middle",
+        difficulty : "Hard",
+        aim : "architecture realism"
+    };
+
     var duckProj = {
         src : "images/Duck.png",
         alt : "Rubber ducks in a bath tub",
