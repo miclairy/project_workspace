@@ -183,7 +183,7 @@ $(document).ready(function () {
         aim : "Make an animation"
     };
 
-    var projects = [duckProj, donutProj, owlProj, cokeProj, pigletProj,
+    var projects = [kitchenProj, cubeProj, duckProj, donutProj, owlProj, cokeProj, pigletProj,
         lowPolyProj, mechHeartProj, motorbikeProj, gunProj, bearProj, perioProj];
 
     $('.btn').click( function(){
