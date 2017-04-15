@@ -14,7 +14,7 @@ $(document).ready(function () {
             $("iframe").remove();
             $('.embed-container').append('<iframe width="1060" height="615" src="https://www.youtube.com/embed/LSCBp65NNuM" frameborder="0" allowfullscreen></iframe>');
             },
-        description : "The inspiration for this came from a reddit monthly constest to do things with e default cube. I decided to improve my animation skills by doing this short animation.",
+        description : "The inspiration for this came from a reddit monthly constest to do things with the default cube. I decided to improve my animation skills by doing this short animation.",
         date : "12th of Feburary 2017",
         time : "1 month",
         difficulty : "Medium",
